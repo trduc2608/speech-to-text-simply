@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header - Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="Layout.html" class="logo">
+                <img src="Logo/Logo2.webp" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="Layout.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content - Contact Section -->
+    <main class="main-content">
+        <section class="contact-section">
+            <h1>Liên Hệ Với Chúng Tôi</h1>
+            <p>Chúng tôi luôn sẵn sàng lắng nghe ý kiến và phản hồi từ bạn. Hãy để lại thông tin dưới đây.</p>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Gửi</button>
+            </form>
+
+            <!-- Thông báo gửi thành công -->
+            <div id="successMessage" class="success-message" style="display: none;">Tin nhắn của bạn đã được gửi thành công!</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Đội Ngũ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
